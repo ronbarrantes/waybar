@@ -9,10 +9,9 @@
   "modules-left": [
     //"hyprland/window",
     "custom/archicon",
-    "clock",
     "cpu",
     "memory",
-    "disk",
+    //  "disk",
     "temperature"
   ],
   "modules-center": [
@@ -39,6 +38,8 @@
     //    "tray"
     // 
     //"idle_inhibitor",
+    ,
+    "clock"
   ],
   // Modules configuration
   "custom/archicon": {
