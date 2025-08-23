@@ -34,6 +34,7 @@ window#waybar.hidden {
   padding-left: 10px;
   padding-right: 10px;
   transition: none;
+  border-radius: 2px;
 }
 
 /* Separation to the left */
@@ -169,8 +170,7 @@ window#waybar.hidden {
 /* === Optional animation === */
 @keyframes blink {
   to {
-    background-color: #bf616a;
-    color: #b5e8e0;
+    background-color: #aaa;
   }
 }
 
@@ -180,22 +180,13 @@ window#waybar.hidden {
 
 #battery.charging,
 #battery.plugged {
-  /* background-color: #26a65b; */
-  /* background-color: #abe9b3; */
   color: #f5ef88;
 }
-
-/* @keyframes blink { */
-/*     to { */
-/*         background-color: #ffffff; */
-/*         color: #000000; */
-/*     } */
-/* } */
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
   background-color: #f53c3c;
-  color: #ffffff;
+  color: #000;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: steps(12);
