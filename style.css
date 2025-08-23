@@ -27,7 +27,8 @@ window#waybar.hidden {
 #network,
 #battery,
 #language {
-  color: #161320;
+  /* background-color: #161320; */
+  background: rgba(34, 36, 54, 0.85);
   margin-top: 5px;
   margin-bottom: 5px;
   padding-left: 10px;
@@ -64,23 +65,23 @@ window#waybar.hidden {
 }
 
 #clock {
-  background: #abe9b3;
+  color: #abe9b3;
 }
 
 #cpu {
-  background: #96cdfb;
+  color: #96cdfb;
 }
 
 #memory {
-  background: #ddb6f2;
+  color: #ddb6f2;
 }
 
 #disk {
-  background: #f5c2e7;
+  color: #f5c2e7;
 }
 
 #temperature {
-  background: #f8bd96;
+  color: #f8bd96;
 }
 
 /* Modules center */
@@ -133,35 +134,35 @@ window#waybar.hidden {
 }
 
 #taskbar button.active {
-  background: rgba(34, 36, 54, 0.5);
+  color: rgba(34, 36, 54, 0.5);
 }
 
 #taskbar button:hover {
-  background: rgba(34, 36, 54, 0.5);
+  color: rgba(34, 36, 54, 0.5);
 }
 
 #idle_inhibitor {
-  background: #b5e8e0;
+  color: #b5e8e0;
   padding-right: 15px;
 }
 
 #pulseaudio {
-  color: #1a1826;
-  background: #f5e0dc;
+  /* color: #1a1826; */
+  color: #f5e0dc;
 }
 
 #pulseaudio_slider {
-  color: #1a1826;
-  background: #e8a2af;
+  /* color: #1a1826; */
+  color: #e8a2af;
 }
 
 #network {
-  background: #cba6f7;
+  color: #cba6f7;
   padding-right: 13px;
 }
 
 #language {
-  background: #a6e3a1;
+  color: #a6e3a1;
   padding-right: 15px;
 }
 
@@ -174,14 +175,14 @@ window#waybar.hidden {
 }
 
 #battery {
-  background: #96cdfb;
+  color: #96cdfb;
 }
 
 #battery.charging,
 #battery.plugged {
   /* background-color: #26a65b; */
   /* background-color: #abe9b3; */
-  background-color: #f5ef88;
+  color: #f5ef88;
 }
 
 /* @keyframes blink { */
