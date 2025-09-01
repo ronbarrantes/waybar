@@ -21,6 +21,7 @@ window#waybar.hidden {
 #memory,
 #disk,
 #temperature,
+#custom-cputemp,
 #idle_inhibitor,
 #pulseaudio,
 #pulseaudio_slider,
@@ -42,6 +43,7 @@ window#waybar.hidden {
 #memory:hover,
 #disk:hover,
 #temperature:hover,
+#custom-cputemp:hover,
 #idle_inhibitor:hover,
 #pulseaudio:hover,
 #pulseaudio_slider:hover,
@@ -64,6 +66,7 @@ window#waybar.hidden {
 /* Separation to the rigth */
 #clock,
 #temperature,
+#custom-cputemp,
 #language {
   margin-right: 5px;
   border-top-right-radius: 10px;
@@ -96,7 +99,8 @@ window#waybar.hidden {
   color: #f5c2e7;
 }
 
-#temperature {
+#temperature,
+#custom-cputemp {
   color: #f8bd96;
 }
 

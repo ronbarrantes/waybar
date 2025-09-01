@@ -12,7 +12,8 @@
     "cpu",
     "memory",
     //  "disk",
-    "temperature"
+    //    "temperature",
+    "custom/cputemp"
   ],
   "modules-center": [
     "hyprland/workspaces"
@@ -173,13 +174,29 @@
     "tooltip": true,
     "tooltip-format": "Available: {free} / {total} ({percentage_free}%)"
   },
+  "custom/cputemp": {
+    "exec": "/home/ronb/bin/cpu_temp.sh",
+    "interval": 2,
+    "critical-threshold": 80,
+    "tooltip": true,
+    "tooltip-format": "Temp: {}°C\nCritical > 80°C",
+    // "format-critical": "{}°C {icon}",
+    "format": "{}°C {icon}",
+    "format-icons": [
+      "",
+      "",
+      ""
+    ]
+  },
   "temperature": {
     // "thermal-zone": 2,
-    "hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
+    // "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
+    // "exec": "/home/ronb/bin/cpu_temp.sh",
+    "interval": 2,
+    "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
     "critical-threshold": 80,
     "tooltip": true,
     "tooltip-format": "Temp: {temperatureC}°C\nCritical > 80°C",
-    // "format-critical": "{temperatureC}°C {icon}",
     "format": "{temperatureC}°C {icon}",
     "format-icons": [
       "",
@@ -203,6 +220,7 @@
     ]
   },
   "battery": {
+    "interval": 1,
     "states": {
       // "good": 95,
       "warning": 30,
